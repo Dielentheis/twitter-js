@@ -44,6 +44,8 @@ code {
 
 .tweetbox {
   padding: 7px;
+  background-color: #fff;
+  margin: 10px;
 }
 
 .tweetbox img {
@@ -51,6 +53,7 @@ code {
   height: 48px;
   width: 48px;
   content:url("http://lorempixel.com/48/48");
+  margin: 7px 15px 0px 10px;
 }
 .content {
   margin-left: 60px;
@@ -58,3 +61,28 @@ code {
 .content .by {
   font-weight: bold;
 }
+
+.names {
+  font-weight: bold;
+  color: #ff80aa;
+  font-size: 16px;
+}
+
+.col-md-9 {
+  background-color: #EEE;
+  padding: 10px;
+}
+
+a {
+  color: #ff80aa;
+}
+
+a:hover {
+  color: #ff0080;
+  text-decoration: none;
+}
+
+
+
+
+

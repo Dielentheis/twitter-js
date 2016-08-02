@@ -1,20 +1,21 @@
 var _ = require('lodash');
-var data = [];
+var data = [{name: 'Omri Stackson', content: 'Yo giggity geezer'}];
+var id = 0;
 
 var add = function (name, content) {
-	data.push({ name: name, content: content });
+  data.push({ name: name, content: content, id: id++ });
 }
 var list = function () {
-	return _.cloneDeep(data);
+  return _.cloneDeep(data);
 }
 var find = function (properties) {
-	return _.cloneDeep(_.filter(data, properties));
+  return _.cloneDeep(_.filter(data, properties));
 }
 
 module.exports = {
-	add: add,
-	list: list,
-	find: find
+  add: add,
+  list: list,
+  find: find
 }
 
 
@@ -33,7 +34,7 @@ var getFakeTweet = function() {
   return "Fullstack Academy is " + randArrayEl(awesome_adj) + "! The instructors are just so " + randArrayEl(awesome_adj) + ". #fullstacklove #codedreams";
 };
 
+
 for (var i = 0; i < 10; i++) {
   module.exports.add( getFakeName(), getFakeTweet() );
 }
-
